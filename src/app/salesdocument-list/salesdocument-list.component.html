@@ -1,0 +1,60 @@
+<h3>Sales document</h3>
+
+<table class="table table-striped">
+    <thead>
+
+    </thead>
+    <tbody>
+        <tr class="sales-documents" *ngFor="let item of items">
+            <td>
+                {{item.companyCode}}
+            </td>
+            <td>
+                {{item.salesDocumentNo}}
+            </td>
+            <td>
+                {{item.salesOfficeCode}}
+            </td>
+            <td>
+                {{item.orderName}}
+            </td>
+            <td>
+                {{item.paymentTerm}}
+            </td>
+            <td>
+                {{item.soldToPartyCode}}
+            </td>
+            <td>
+                {{item.shipToPartyCode}}
+            </td>
+            <td>
+                {{item.billToPartyCode}}
+            </td>
+            <td>
+                {{item.payerCode}}
+            </td>
+            <td>
+                {{item.endUserCode}}
+            </td>
+            <td>
+                {{item.salesPersonCode}}
+            </td>
+            <td>
+                {{item.taxCode}}
+            </td>
+            <td>
+                {{item.insertUser}}
+            </td>
+            <td>
+                {{item.insertDateTime}}
+            </td>
+            <td>
+                {{item.updateUser}}
+            </td>
+            <td>
+                {{item.updateDateTime}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
