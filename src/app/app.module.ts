@@ -16,6 +16,8 @@ import { ShippingComponent } from './shipping/shipping.component';
 
 import { SalesdocumentsService } from './salesdocuments.service';
 import { SalesdocumentListComponent } from './salesdocument-list/salesdocument-list.component';
+import { SalesdocumentDetailComponent } from './salesdocument-detail/salesdocument-detail.component';
+import { SalesdocumentComponent } from './salesdocument/salesdocument.component';
 
 @NgModule({
   imports: [
@@ -28,6 +30,8 @@ import { SalesdocumentListComponent } from './salesdocument-list/salesdocument-l
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'salesdocuments', component: SalesdocumentListComponent },
+      { path: 'newsalesdocument', component: SalesdocumentDetailComponent },
+      { path: 'salesdocument/:companyCode/:salesDocumentNo', component: SalesdocumentComponent },
     ])
   ],
   declarations: [
@@ -38,7 +42,9 @@ import { SalesdocumentListComponent } from './salesdocument-list/salesdocument-l
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    SalesdocumentListComponent
+    SalesdocumentListComponent,
+    SalesdocumentDetailComponent,
+    SalesdocumentComponent
   ],
   bootstrap: [ AppComponent ],
   

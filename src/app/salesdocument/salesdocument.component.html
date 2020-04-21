@@ -1,0 +1,129 @@
+<p>salesdocument works!</p>
+
+<div *ngIf="salesDocument">
+
+  <div>
+    <label for="companyCode">
+      companyCode
+    </label>
+    <input id="companyCode" type="text" value="{{ salesDocument.companyCode}}">
+  </div>
+
+  <div>
+    <label for="salesDocumentNo">
+      salesDocumentNo
+    </label>
+    <input id="salesDocumentNo" type="text" value="{{ salesDocument.salesDocumentNo}}">
+  </div>
+
+
+  <div>
+    <label for="salesOfficeCode">
+      salesOfficeCode
+    </label>
+    <input id="salesOfficeCode" type="text" value="{{ salesDocument.salesOfficeCode}}">
+  </div>
+
+
+
+  <div>
+    <label for="orderName">
+      orderName
+    </label>
+    <input id="orderName" type="text" value="{{ salesDocument.orderName}}">
+  </div>
+
+
+
+  <div>
+    <label for="paymentTerm">
+      paymentTerm
+    </label>
+    <input id="paymentTerm" type="text" value="{{ salesDocument.paymentTerm}}">
+  </div>
+
+
+
+
+  <div>
+    <label for="soldToPartyCode">
+      soldToPartyCode
+    </label>
+    <input id="soldToPartyCode" type="text" value="{{ salesDocument.soldToPartyCode}}">
+  </div>
+
+
+
+  <div>
+    <label for="shipToPartyCode">
+      shipToPartyCode
+    </label>
+    <input id="shipToPartyCode" type="text" value="{{ salesDocument.shipToPartyCode}}">
+  </div>
+
+
+  <div>
+    <label for="billToPartyCode">
+      billToPartyCode
+    </label>
+    <input id="billToPartyCode" type="text" value="{{ salesDocument.billToPartyCode}}">
+  </div>
+
+
+  <div>
+    <label for="payerCode">
+      payerCode
+    </label>
+    <input id="payerCode" type="text" value="{{ salesDocument.payerCode}}">
+  </div>
+
+  <div>
+    <label for="endUserCode">
+      endUserCode
+    </label>
+    <input id="endUserCode" type="text" value="{{ salesDocument.endUserCode}}">
+  </div>
+
+  <div>
+    <label for="salesPersonCode">
+      salesPersonCode
+    </label>
+    <input id="salesPersonCode" type="text" value="{{ salesDocument.salesPersonCode}}">
+  </div>
+
+  <div>
+    <label for="taxCode">
+      taxCode
+    </label>
+    <input id="taxCode" type="text" value="{{ salesDocument.taxCode}}">
+  </div>
+  <div>
+    <label for="insertUser">
+      insertUser
+    </label>
+    <input id="insertUser" type="text" value="{{ salesDocument.insertUser}}">
+  </div>
+
+  <div>
+    <label for="insertDateTime">
+      insertDateTime
+    </label>
+    <input id="insertDateTime" type="text" value="{{ salesDocument.insertDateTime}}">
+  </div>
+
+  <div>
+    <label for="updateUser">
+      updateUser
+    </label>
+    <input id="updateUser" type="text" value="{{ salesDocument.updateUser}}">
+  </div>
+  <div>
+    <label for="updateDateTime">
+      updateDateTime
+    </label>
+    <input id="updateDateTime" type="text" class="date-time" value="{{ salesDocument.updateDateTime}}">
+  </div>
+</div>
+<div>
+  <a class="button fancy-button" routerLink="/salesdocuments"> goto list</a>
+</div>
