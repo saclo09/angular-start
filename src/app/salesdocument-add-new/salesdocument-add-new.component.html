@@ -1,0 +1,131 @@
+
+<div>
+    <a class="button fancy-button" routerLink="/salesdocuments"> goto list</a>
+</div>
+
+<form [formGroup]="addSaleDocForm" (ngSubmit)="OnAddSalesDoc(addSaleDocForm.value)">
+
+    <div>
+      <label for="companyCode">
+        companyCode
+      </label>
+      <input id="companyCode" type="text" formControlName="companyCode">
+    </div>
+  
+    <div>
+      <label for="salesDocumentNo">
+        salesDocumentNo
+      </label>
+      <input id="salesDocumentNo" type="text" formControlName="salesDocumentNo">
+    </div>
+
+    
+    <div>
+        <label for="salesOfficeCode">
+            salesOfficeCode
+        </label>
+        <input id="salesOfficeCode" type="text" formControlName="salesOfficeCode">
+      </div>
+
+
+      
+    <div>
+        <label for="orderName">
+            orderName
+        </label>
+        <input id="orderName" type="text" formControlName="orderName">
+      </div>
+
+
+      
+    <div>
+        <label for="paymentTerm">
+            paymentTerm
+        </label>
+        <input id="paymentTerm" type="text" formControlName="paymentTerm">
+      </div>
+  
+
+
+
+      <div>
+        <label for="soldToPartyCode">
+            soldToPartyCode
+        </label>
+        <input id="soldToPartyCode" type="text" formControlName="soldToPartyCode">
+      </div>
+
+
+
+      <div>
+        <label for="shipToPartyCode">
+            shipToPartyCode
+        </label>
+        <input id="shipToPartyCode" type="text" formControlName="shipToPartyCode">
+      </div>
+
+
+      <div>
+        <label for="billToPartyCode">
+            billToPartyCode
+        </label>
+        <input id="billToPartyCode" type="text" formControlName="billToPartyCode">
+      </div>
+
+
+      <div>
+        <label for="payerCode">
+            payerCode
+        </label>
+        <input id="payerCode" type="text" formControlName="payerCode">
+      </div>
+
+      <div>
+        <label for="endUserCode">
+            endUserCode
+        </label>
+        <input id="endUserCode" type="text" formControlName="endUserCode">
+      </div>
+
+      <div>
+        <label for="salesPersonCode">
+            salesPersonCode
+        </label>
+        <input id="salesPersonCode" type="text" formControlName="salesPersonCode">
+      </div>
+
+      <div>
+        <label for="taxCode">
+            taxCode
+        </label>
+        <input id="taxCode" type="text" formControlName="taxCode">
+      </div>
+      <div>
+        <label for="insertUser">
+            insertUser
+        </label>
+        <input id="insertUser" type="text" formControlName="insertUser">
+      </div>
+
+      <div>
+        <label for="insertDateTime">
+            insertDateTime
+        </label>
+        <input id="insertDateTime" type="text" formControlName="insertDateTime">
+      </div>
+
+      <div>
+        <label for="updateUser">
+            updateUser
+        </label>
+        <input id="updateUser" type="text" formControlName="updateUser">
+      </div>
+      <div>
+        <label for="updateDateTime">
+            updateDateTime
+        </label>
+        <input id="updateDateTime" type="text" class="date-time" formControlName="updateDateTime">
+      </div>
+    <button class="button" type="submit">Purchase</button>
+  
+  </form>

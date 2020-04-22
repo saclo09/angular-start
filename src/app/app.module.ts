@@ -10,14 +10,15 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
 import { SalesdocumentsService } from './salesdocuments.service';
 import { SalesdocumentListComponent } from './salesdocument-list/salesdocument-list.component';
+import { SalesdocumentAddNewComponent } from './salesdocument-add-new/salesdocument-add-new.component';
 import { SalesdocumentDetailComponent } from './salesdocument-detail/salesdocument-detail.component';
-import { SalesdocumentComponent } from './salesdocument/salesdocument.component';
 
 @NgModule({
   imports: [
@@ -30,8 +31,8 @@ import { SalesdocumentComponent } from './salesdocument/salesdocument.component'
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'salesdocuments', component: SalesdocumentListComponent },
-      { path: 'newsalesdocument', component: SalesdocumentDetailComponent },
-      { path: 'salesdocument/:companyCode/:salesDocumentNo', component: SalesdocumentComponent },
+      { path: 'salesdocument-add', component: SalesdocumentAddNewComponent },
+      { path: 'salesdocument/:companyCode/:salesDocumentNo', component: SalesdocumentDetailComponent },
     ])
   ],
   declarations: [
@@ -43,8 +44,8 @@ import { SalesdocumentComponent } from './salesdocument/salesdocument.component'
     CartComponent,
     ShippingComponent,
     SalesdocumentListComponent,
-    SalesdocumentDetailComponent,
-    SalesdocumentComponent
+    SalesdocumentAddNewComponent,
+    SalesdocumentDetailComponent
   ],
   bootstrap: [ AppComponent ],
   
